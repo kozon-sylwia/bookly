@@ -40,11 +40,11 @@ export const StyledButton = styled.button`
   border-radius: 25px;
   cursor: pointer;
   background-color: ${(props) => props.bg || "#ba120f"};
-  color: ${(props) => props.color || "black"};
+  color: ${(props) => props.color || "WHITE"};
   border: none;
-  box-shadow: 8px 5px 19px #000009;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
   &:hover {
-    opacity: 0.8;
+    scale: 1.1;
   }
 `;
 
@@ -59,6 +59,7 @@ export const StyledBestSellers = styled.div`
 export const StyledH2 = styled.h2`
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
   margin: 30px auto;
+  margin-bottom: 60px;
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   text-align: center;

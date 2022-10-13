@@ -5,7 +5,8 @@ export const StyledCover = styled.div`
   display: flex;
   justify-content: center;
   img {
-    width: 200px;
+    width: 250px;
+    height: 400px;
   }
 `;
 
@@ -17,6 +18,7 @@ export const StyledCartPanel = styled.form`
   column-gap: 15px;
   align-self: stretch;
   background-color: #f2f2f2;
+  display: none;
 `;
 
 export const StyledCountInput = styled.input`
@@ -52,6 +54,7 @@ export const StyledInfoPanel = styled.div`
     font-weight: 400;
   }
   border-bottom: 1px solid black;
+  display: none;
 `;
 
 export const StyledButton = styled.button`

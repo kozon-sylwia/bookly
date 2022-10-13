@@ -16,7 +16,7 @@ export const LoginOrRegister = () => {
     <MainWindow>
       <TextAndButtons>
         <StyledH2>
-          Enjoy your <span>book</span> everyday with us
+          Enjoy your <span>book</span> everyday with BOOKLY
         </StyledH2>
         {!isAuth && (
           <FlexColumns>
