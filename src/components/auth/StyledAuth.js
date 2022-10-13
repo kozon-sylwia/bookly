@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import background from "./img/login.jpg";
 
 export const StyledAuthWrapper = styled.div`
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  background-image: url(${background});
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -17,20 +17,24 @@ export const StyledAuthWrapper = styled.div`
   padding-bottom: 30px;
 `;
 export const StyledAuthPanel = styled.div`
-  background-color: rgba(255, 242, 224, 0.7);
-  border: 1px solid black;
+  background-color: #f2f2f2;
+  /* border: 1px solid black; */
+  border-radius: 75%;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
   display: flex;
   flex-direction: column;
-  width: 30vw;
-  padding: 30px;
-  padding-top: 3%;
-  padding-bottom: 5%;
+  width: 500px;
+  height: 500px;
+  /* padding: 30px;
+  padding-top: 3%; */
+  /* padding-bottom: 5%; */
   text-align: center;
-  font-family: "Inter", sans-serif;
+  justify-content: center;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   margin-left: 10%;
-  margin-top: 6%;
-  margin-bottom: 6%;
+  margin-top: 2%;
+  margin-bottom: 2%;
   row-gap: 20px;
 `;
 export const StyledAuthForm = styled.form`
@@ -41,21 +45,28 @@ export const StyledAuthForm = styled.form`
   row-gap: 10px;
 `;
 export const StyledAuthButton = styled.button`
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   width: 150px;
-  background-color: #ffce87;
-  color: rgba(34, 9, 1, 0.9);
-  font-weight: bold;
+  background-color: #ba120f;
+  color: white;
+  border: none;
+  font-weight: 300;
+  font-size: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
   box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.4);
+  height: 30px;
   @media (max-width: 600px) {
     width: 100px;
   }
+  border-radius: 25px;
 `;
 export const StyledAuthHeader = styled.h2`
-  font-family: "Inter", sans-serif;
-  font-size: 30px;
-  font-weight: bold;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+  font-weight: 400;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 10px;
   margin-bottom: 10px;
@@ -78,12 +89,17 @@ export const StyledLink = styled(Link)`
 `;
 
 export const StyledButton = styled.button`
-  background-color: #ffce87;
-  border: 1px solid #220901;
+  background-color: #ba120f;
+  color: white;
+  border: none;
+  :hover {
+    scale: 1.1;
+  }
+  border-radius: 15px;
   font-family: "Inter", sans-serif;
   margin: 3px;
-  height: 30px;
-  width: 130px;
+  height: 25px;
+  width: 100px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
 `;

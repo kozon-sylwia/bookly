@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import background from "./img/background.jpg";
-import packageBackground from "./img/package-backgroung.jpg";
 import { Link } from "react-router-dom";
 <style>
   @import
@@ -10,7 +8,6 @@ import { Link } from "react-router-dom";
 export const StyledCart = styled.div`
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  background-image: url(${background});
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -26,7 +23,7 @@ export const StyledTitle = styled.h2`
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
-  color: rgba(255, 242, 224, 0.9);
+  color: black;
   text-align: center;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 0;
@@ -40,7 +37,7 @@ export const StyledCartItem = styled.li`
   align-items: center;
   padding: 15px;
   justify-content: space-around;
-  background-color: rgba(255, 242, 224, 0.9);
+  background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 15px;
   margin: auto;
@@ -49,7 +46,7 @@ export const StyledCartItem = styled.li`
   padding-right: 0;
 `;
 export const StyledButton = styled.button`
-  background-color: #ffce87;
+  background-color: #ba120f;
   border: 1px solid #220901;
   font-family: "Inter", sans-serif;
   margin: 3px;
@@ -59,7 +56,7 @@ export const StyledButton = styled.button`
   cursor: pointer;
 `;
 export const StyledDeliveryButton = styled.button`
-  background-color: #ffce87;
+  background-color: #ba120f;
   border: 1px solid #220901;
   font-family: "Inter", sans-serif;
   margin: 3px;
@@ -69,7 +66,7 @@ export const StyledDeliveryButton = styled.button`
   cursor: pointer;
 `;
 export const StyledCounterButton = styled.button`
-  background: #ffce87;
+  background: #ba120f;
   border: 1px solid #220901;
   /* border-radius: 50%; */
   font-family: "Inter", sans-serif;
@@ -79,7 +76,7 @@ export const StyledCounterButton = styled.button`
   cursor: pointer;
 `;
 export const StyledInput = styled.input`
-  background: rgba(255, 242, 224, 0.9);
+  background: #f2f2f2;
   border: 1px solid #220901;
   margin: 3px;
   cursor: pointer;
@@ -108,7 +105,7 @@ export const StyledSummary = styled.p`
   border: 1px solid black;
   margin-right: 100px;
   padding: 15px;
-  background-color: rgba(255, 242, 224, 0.9);
+  background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: auto;
 `;
@@ -126,7 +123,7 @@ export const StyledEmptyCartDiv = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  background-color: rgba(255, 242, 224, 0.7);
+  background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid #220901;
   width: 30%;
@@ -166,7 +163,7 @@ export const StyledLink = styled(Link)`
 export const StyledFormWrapper = styled.div`
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  background-image: url(${background});
+
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -182,7 +179,7 @@ export const StyledFormWrapper = styled.div`
 export const StyledDeliveryContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: rgba(255, 242, 224, 0.9);
+  background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid #220901;
   width: 80vw;
@@ -196,7 +193,7 @@ export const StyledDeliveryContainer = styled.div`
 export const StyledOrderTotal = styled.div`
   margin-left: 10%;
   padding: 10px;
-  background-color: rgba(255, 242, 224, 1);
+  background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: 1px solid #220901;
   height: 20%;
@@ -215,7 +212,7 @@ export const StyledForm = styled.form`
 `;
 
 export const StyledTotalCost = styled.h3`
-  background-color: #ffce87;
+  background-color: #f2f2f2;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 50%;
   padding: 5px;
@@ -229,7 +226,7 @@ export const StyledDeliveryInfo = styled.p`
   font-weight: normal;
 `;
 export const StyledSubmitButton = styled.button`
-  background-color: #ffce87;
+  background-color: #ba120f;
   border: 1px solid #220901;
   font-family: "Inter", sans-serif;
   margin: 3px;
@@ -251,7 +248,6 @@ export const StyledOrderSummary = styled.div`
 export const StyledSummaryWrapper = styled.div`
   font-family: "Inter", sans-serif;
   font-weight: 700;
-  background-image: url(${packageBackground});
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -272,5 +268,5 @@ export const StyledSummaryInfo = styled.p`
 
 export const StyledOrangeLink = styled(Link)`
   font-size: 20px;
-  color: #ff902b;
+  color: #ba120f;
 `;

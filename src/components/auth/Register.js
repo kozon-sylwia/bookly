@@ -11,7 +11,7 @@ export const Register = () => {
     <StyledAuthWrapper>
       <StyledAuthPanel>
         <StyledAuthHeader>Register:</StyledAuthHeader>
-        <AuthForm submitText="Register" onSubmit={(e) => handleRegister(e)} />
+        <AuthForm submitText="REGISTER" onSubmit={(e) => handleRegister(e)} />
       </StyledAuthPanel>
     </StyledAuthWrapper>
   );

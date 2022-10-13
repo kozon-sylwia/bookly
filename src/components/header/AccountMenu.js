@@ -1,5 +1,5 @@
-import { AccountMenuPanel } from "./accountMenuComponents/AccountMenuPanel"
-import { StyledAccountMenu } from "./Header.styled"
+import { AccountMenuPanel } from "./accountMenuComponents/AccountMenuPanel";
+import { StyledAccountMenu } from "./Header.styled";
 import { AuthContext } from "../../providers/AuthProvider";
 import { CartContext } from "../../providers/CartProvider";
 import { useContext } from "react";
@@ -17,7 +17,7 @@ export const AccountMenu = () => {
 
   return (
     <StyledAccountMenu>
-      <p>Account</p>
+      <p>ACCOUNT</p>
       <AccountMenuPanel />
     </StyledAccountMenu>
   );

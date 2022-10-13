@@ -18,7 +18,7 @@ export const Login = () => {
       <StyledAuthPanel>
         <StyledAuthHeader>Log in:</StyledAuthHeader>
         <AuthForm
-          submitText="Log in"
+          submitText="LOG IN"
           onSubmit={(e) => handleLogin(e, setUser, setIsAuth)}
         />
         <StyledLink to="/forgotPassword">Forgot password?</StyledLink>

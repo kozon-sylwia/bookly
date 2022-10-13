@@ -10,8 +10,8 @@ export const AuthPanel = (user) => {
         </div>
       ) : (
         <div>
-          <StyledNavLink to="/login">Log In</StyledNavLink>
-          <StyledNavLink to="/register">Register</StyledNavLink>
+          <StyledNavLink to="/login">LOG IN</StyledNavLink>
+          <StyledNavLink to="/register">REGISTER</StyledNavLink>
         </div>
       )}
     </>
