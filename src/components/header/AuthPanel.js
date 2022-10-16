@@ -5,13 +5,13 @@ export const AuthPanel = (user) => {
     <>
       {user === null ? (
         <div>
-          <StyledDummyNavLink>Log In</StyledDummyNavLink>
-          <StyledDummyNavLink>Register</StyledDummyNavLink>
+          <StyledDummyNavLink>Sign In</StyledDummyNavLink>
+          <StyledDummyNavLink>Sign Up</StyledDummyNavLink>
         </div>
       ) : (
         <div>
-          <StyledNavLink to="/login">LOG IN</StyledNavLink>
-          <StyledNavLink to="/register">REGISTER</StyledNavLink>
+          <StyledNavLink to="/login">SIGN IN</StyledNavLink>
+          <StyledNavLink to="/register">SIGN UP</StyledNavLink>
         </div>
       )}
     </>

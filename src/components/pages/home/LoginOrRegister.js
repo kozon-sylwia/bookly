@@ -21,11 +21,11 @@ export const LoginOrRegister = () => {
         {!isAuth && (
           <FlexColumns>
             <Link to="register">
-              <StyledButton>Register</StyledButton>
+              <StyledButton>Sign up</StyledButton>
             </Link>
             <Link to="login">
               <StyledButton bg="#f2f2f2" color="#220901" brd="#220901">
-                Login
+                Sign in
               </StyledButton>
             </Link>
           </FlexColumns>

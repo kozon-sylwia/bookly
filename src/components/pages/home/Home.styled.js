@@ -42,7 +42,7 @@ export const StyledButton = styled.button`
   background-color: ${(props) => props.bg || "#ba120f"};
   color: ${(props) => props.color || "WHITE"};
   border: none;
-  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.6);
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
   &:hover {
     scale: 1.1;
   }

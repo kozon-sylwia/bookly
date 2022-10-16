@@ -4,14 +4,23 @@ import {
   StyledAuthPanel,
   StyledAuthHeader,
   StyledAuthWrapper,
+  StyledAuthHelper,
+  StyledAuthLink,
 } from "./StyledAuth";
 
 export const Register = () => {
   return (
     <StyledAuthWrapper>
+      <StyledAuthHelper>
+        <p>You already have an account?</p>
+        <StyledAuthLink to="/login">SIGN IN</StyledAuthLink>
+      </StyledAuthHelper>
       <StyledAuthPanel>
-        <StyledAuthHeader>Register:</StyledAuthHeader>
-        <AuthForm submitText="REGISTER" onSubmit={(e) => handleRegister(e)} />
+        <StyledAuthHeader>Create an account:</StyledAuthHeader>
+        <AuthForm
+          submitText="Create an account"
+          onSubmit={(e) => handleRegister(e)}
+        />
       </StyledAuthPanel>
     </StyledAuthWrapper>
   );
