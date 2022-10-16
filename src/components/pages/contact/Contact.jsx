@@ -55,21 +55,21 @@ export const Contact = () => {
         </StyledH2>
         <form onSubmit={handleSubmit} ref={form}>
           <InputField
-            title={"NAME"}
+            title={"Name"}
             type={"text"}
             value={formValues.user_name}
             onChange={onChangeHandler}
             name={"user_name"}
           />
           <InputField
-            title={"EMAIL"}
+            title={"Email"}
             type={"email"}
             value={formValues.user_email}
             onChange={onChangeHandler}
             name={"user_email"}
           />
           <TextareaField
-            title={"MESSAGE"}
+            title={"Message"}
             value={formValues.message}
             onChange={onChangeHandler}
             name={"message"}

@@ -21,7 +21,7 @@ export const StyledInput = styled.input`
   background-color: #f2f2f2;
   border: none;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  border-radius: 3px;
 `;
 
 export const StyledTextarea = styled.textarea`
@@ -35,21 +35,30 @@ export const StyledTextarea = styled.textarea`
   background-color: #f2f2f2;
   border: none;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  border-radius: 3px;
 `;
 
 export const StyledContactLabel = styled.label`
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 17px;
 `;
 export const StyledButton = styled.input`
-  margin-top: 10px;
-  width: 100px;
-  padding: 5px 20px;
-  font-size: 16px;
-  font-weight: bold;
   background-color: #ba120f;
+  color: white;
   border: none;
-  color: #f2f2f2;
+  :hover {
+    scale: 1.1;
+  }
+  border-radius: 30px;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  margin: 3px;
+  height: 30px;
+  width: 120px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  margin-top: 30px;
+  margin-bottom: 50px;
 `;
 
 export const StyledH2 = styled.h2`
@@ -57,7 +66,7 @@ export const StyledH2 = styled.h2`
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
   font-family: "Montserrat", sans-serif;
   font-size: 48px;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 58px;
   letter-spacing: 0em;
   color: black;
