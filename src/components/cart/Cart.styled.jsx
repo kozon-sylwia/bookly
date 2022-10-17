@@ -89,10 +89,13 @@ export const StyledCounterButton = styled.button`
   margin-bottom: 16px;
 `;
 export const StyledInput = styled.input`
-  background: #f2f2f2;
-  border: 1px solid #220901;
+  background: white;
+  border: none;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   margin: 3px;
   cursor: pointer;
+  padding: 5px;
 `;
 
 export const StyledCounterIput = styled.input`
@@ -202,7 +205,6 @@ export const StyledFormWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -219,22 +221,23 @@ export const StyledDeliveryContainer = styled.div`
   display: flex;
   flex-direction: row;
   background-color: #f2f2f2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid #220901;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
   width: 80vw;
   margin: auto;
   padding: 40px;
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+  font-weight: 500;
+  border-radius: 15px;
 `;
 
 export const StyledOrderTotal = styled.div`
   margin-left: 10%;
   padding: 10px;
-  background-color: #f2f2f2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid #220901;
+  background-color: white;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   height: 20%;
   width: 30%;
   text-align: center;
@@ -246,37 +249,36 @@ export const StyledOrderTotal = styled.div`
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 10px;
   margin-right: 20%;
 `;
 
 export const StyledTotalCost = styled.h3`
-  background-color: #f2f2f2;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 50%;
   padding: 5px;
 `;
 
 export const StyledDeliveryHeader = styled.h2`
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: 400;
 `;
 export const StyledDeliveryInfo = styled.p`
   font-size: 20px;
   font-weight: normal;
 `;
-export const StyledSubmitButton = styled.button`
-  background-color: #ba120f;
-  border: 1px solid #220901;
-  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  margin: 3px;
-  height: 30px;
-  width: 100px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  margin-top: 30px;
-`;
+// export const StyledSubmitButton = styled.button`
+//   background-color: #ba120f;
+//   border: 1px solid #220901;
+//   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+//   font-family: "Montserrat", sans-serif;
+//   color: white;
+//   margin: 3px;
+//   height: 30px;
+//   width: 100px;
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//   cursor: pointer;
+//   margin-top: 30px;
+// `;
 
 export const StyledOrderSummary = styled.div`
   display: flex;
@@ -305,7 +307,6 @@ export const StyledSummaryHeader = styled.h1`
 `;
 export const StyledSummaryInfo = styled.p`
   font-size: 20px;
-  /* font-weight: normal; */
 `;
 
 export const StyledOrangeLink = styled(Link)`

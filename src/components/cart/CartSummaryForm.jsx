@@ -16,7 +16,7 @@ import {
   StyledTotalCost,
   StyledDeliveryHeader,
   StyledDeliveryInfo,
-  StyledSubmitButton,
+  StyledDeliveryButton,
 } from "./Cart.styled";
 
 export const CartSummaryForm = () => {
@@ -60,7 +60,7 @@ export const CartSummaryForm = () => {
   };
 
   const delivery = 15;
-  const totalCost = Number(total) + delivery;
+  const totalCost = (Number(total) + delivery).toFixed(2);
   const navigate = useNavigate();
   return (
     <StyledFormWrapper>
@@ -68,78 +68,66 @@ export const CartSummaryForm = () => {
         <StyledOrderTotal>
           <StyledDeliveryHeader>Order summary</StyledDeliveryHeader>
           <StyledDeliveryInfo>Value of items: {total} zł</StyledDeliveryInfo>
-          <StyledDeliveryInfo>Delivery: 15zł</StyledDeliveryInfo>
+          <StyledDeliveryInfo>Delivery: 15 zł</StyledDeliveryInfo>
           <StyledTotalCost>Total cost: {totalCost} zł</StyledTotalCost>
         </StyledOrderTotal>
         <StyledForm onSubmit={(e) => handleOrderSubmit(e)}>
-          <h1>Delivery information</h1>
-          <label htmlFor="name">
-            Name
-            <StyledInput
-              type="text"
-              name="name"
-              id="name"
-              value={orderData.name}
-              onChange={updateOrderFormState}
-              required={true}
-            />
-          </label>
-          <label htmlFor="surname">
-            Surname
-            <StyledInput
-              type="text"
-              name="surname"
-              id="surname"
-              value={orderData.surname}
-              onChange={updateOrderFormState}
-              required={true}
-            />
-          </label>
-          <label htmlFor="email">
-            Email
-            <StyledInput
-              type="email"
-              name="email"
-              id="email"
-              value={orderData.email}
-              onChange={updateOrderFormState}
-              required={true}
-            />
-          </label>
-          <label htmlFor="phone">
-            Phone
-            <StyledInput
-              type="tel"
-              name="phone"
-              id="phone"
-              value={orderData.phone}
-              onChange={updateOrderFormState}
-              required={true}
-            />
-          </label>
-          <p>Address</p>
-          <label htmlFor="city">
-            City
-            <StyledInput
-              type="text"
-              name="city"
-              id="city"
-              value={orderData.city}
-              onChange={updateOrderFormState}
-              required={true}
-            />
-          </label>
-          <label htmlFor="street">
-            Street
-            <StyledInput
-              type="text"
-              name="street"
-              id="street"
-              value={orderData.street}
-              onChange={updateOrderFormState}
-              required={true}
-            />
-          </label>
+          <StyledDeliveryHeader>Delivery information</StyledDeliveryHeader>
+          <StyledInput
+            type="text"
+            name="name"
+            id="name"
+            value={orderData.name}
+            onChange={updateOrderFormState}
+            required={true}
+            placeholder="Name"
+          />
+          <StyledInput
+            type="text"
+            name="surname"
+            id="surname"
+            value={orderData.surname}
+            onChange={updateOrderFormState}
+            required={true}
+            placeholder="Surname"
+          />
+          <StyledInput
+            type="email"
+            name="email"
+            id="email"
+            value={orderData.email}
+            onChange={updateOrderFormState}
+            required={true}
+            placeholder=" Email"
+          />
+          <StyledInput
+            type="tel"
+            name="phone"
+            id="phone"
+            value={orderData.phone}
+            onChange={updateOrderFormState}
+            required={true}
+            placeholder=" Phone"
+          />
+          <p>Address:</p>
+          <StyledInput
+            type="text"
+            name="city"
+            id="city"
+            value={orderData.city}
+            onChange={updateOrderFormState}
+            required={true}
+            placeholder="City"
+          />
+          <StyledInput
+            type="text"
+            name="street"
+            id="street"
+            value={orderData.street}
+            onChange={updateOrderFormState}
+            required={true}
+            placeholder="Street"
+          />
           <div>
             <p htmlFor="payment">Choose method of payment: </p>
             <label htmlFor="payment">
@@ -151,6 +139,7 @@ export const CartSummaryForm = () => {
                 onChange={updateOrderFormState}
                 value="Blik"
                 required={true}
+                placeholder=""
               />
             </label>
             <label htmlFor="payment">
@@ -162,6 +151,7 @@ export const CartSummaryForm = () => {
                 id="payment"
                 onChange={updateOrderFormState}
                 required={true}
+                placeholder=""
               />
             </label>
           </div>
@@ -176,6 +166,7 @@ export const CartSummaryForm = () => {
                 id="delivery"
                 onChange={updateOrderFormState}
                 required={true}
+                placeholder=""
               />
             </label>
             <label htmlFor="delivery">
@@ -187,10 +178,13 @@ export const CartSummaryForm = () => {
                 id="delivery"
                 onChange={updateOrderFormState}
                 required={true}
+                placeholder=""
               />
             </label>
           </div>
-          <StyledSubmitButton type="submit">Submit order</StyledSubmitButton>
+          <StyledDeliveryButton type="submit">
+            Submit order
+          </StyledDeliveryButton>
         </StyledForm>
       </StyledDeliveryContainer>
     </StyledFormWrapper>
