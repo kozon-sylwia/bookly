@@ -162,6 +162,7 @@ export const StyledEmptyCartDiv = styled.div`
   margin: auto;
   text-align: center;
   font-size: 25px;
+  align-items: center;
 `;
 
 export const StyledBookCover = styled.img`

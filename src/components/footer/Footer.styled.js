@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledFooter = styled.div`
-  font-family: "Inter", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   background-color: #c0c2c2;
   padding: 20px;
   margin: auto;
@@ -31,7 +32,7 @@ export const FooterColumns = styled.div`
 
 export const Subject = styled.p`
   font-size: 17px;
-  font-weight: 700;
+  font-weight: 600;
   margin: 5px;
 `;
 
