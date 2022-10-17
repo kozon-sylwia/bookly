@@ -5,12 +5,15 @@ import {
   StyledSummaryWrapper,
   StyledOrangeLink,
 } from "./Cart.styled";
+import delivery from "./img/delivery.jpg";
 
 export const OrderSummary = () => {
   return (
     <StyledSummaryWrapper>
       <StyledOrderSummary>
-        <StyledSummaryHeader>Thank you for your order!</StyledSummaryHeader>
+        <StyledSummaryHeader>
+          Thank you for your <span style={{ color: "#ba120f" }}>order</span>!
+        </StyledSummaryHeader>
         <StyledSummaryInfo>
           Your order will be send within two working days. You can follow stages
           of your order on your account page.{" "}
@@ -21,6 +24,7 @@ export const OrderSummary = () => {
         </StyledSummaryInfo>
         <StyledOrangeLink to="/books"> Book store</StyledOrangeLink>
       </StyledOrderSummary>
+      <img src={delivery} width="400px" />
     </StyledSummaryWrapper>
   );
 };

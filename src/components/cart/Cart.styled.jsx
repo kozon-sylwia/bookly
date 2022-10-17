@@ -266,19 +266,6 @@ export const StyledDeliveryInfo = styled.p`
   font-size: 20px;
   font-weight: normal;
 `;
-// export const StyledSubmitButton = styled.button`
-//   background-color: #ba120f;
-//   border: 1px solid #220901;
-//   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
-//   font-family: "Montserrat", sans-serif;
-//   color: white;
-//   margin: 3px;
-//   height: 30px;
-//   width: 100px;
-//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-//   cursor: pointer;
-//   margin-top: 30px;
-// `;
 
 export const StyledOrderSummary = styled.div`
   display: flex;
@@ -292,27 +279,29 @@ export const StyledSummaryWrapper = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  margin-top: 0;
+  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
 `;
 export const StyledSummaryHeader = styled.h1`
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: 300;
 `;
 export const StyledSummaryInfo = styled.p`
   font-size: 20px;
+  font-weight: 400;
 `;
 
 export const StyledOrangeLink = styled(Link)`
   font-size: 20px;
   color: #ba120f;
   font-weight: 600;
+  width: 200px;
   cursor: pointer;
   :hover {
     scale: 1.1;
