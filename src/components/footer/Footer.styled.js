@@ -6,6 +6,8 @@ export const StyledFooter = styled.div`
   background-color: #c0c2c2;
   padding: 20px;
   margin: auto;
+  clear: both;
+  height: 180px;
 `;
 
 export const FooterRows = styled.div`

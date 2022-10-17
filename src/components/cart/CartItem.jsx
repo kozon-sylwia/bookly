@@ -13,6 +13,8 @@ import {
   StyledBookAuthor,
   StyledBookTitle,
   StyledPrices,
+  StyledBookInfo,
+  StyledPricesSum,
 } from "./Cart.styled";
 
 export const CartItem = ({
@@ -79,14 +81,14 @@ export const CartItem = ({
   return (
     <StyledCartItem>
       <StyledBookCover src={coverURL} alt="cover" />
-      <div>
+      <StyledBookInfo>
         <StyledBookTitle>
           {title} {count > 1 && <span>{count}x</span>}
         </StyledBookTitle>
         <StyledBookAuthor>by {author}</StyledBookAuthor>
-      </div>
-      <StyledPrices>{price} zł</StyledPrices>
-      <StyledPrices>{(price * bookCount).toFixed(2)} zł</StyledPrices>
+      </StyledBookInfo>
+      <StyledPrices>{price} zł / piece</StyledPrices>
+      <StyledPricesSum>{(price * bookCount).toFixed(2)} zł</StyledPricesSum>
       <Counter>
         <StyledCounterButton
           onClick={(e) => {

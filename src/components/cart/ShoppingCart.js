@@ -14,6 +14,7 @@ import {
   StyledDeliveryButton,
   StyledLink,
   StyledOrangeLink,
+  StyledTotal,
 } from "./Cart.styled";
 
 export const ShoppingCart = () => {
@@ -57,7 +58,7 @@ export const ShoppingCart = () => {
           <StyledEmptyCartDiv>
             <div>
               <span>Sorry, your cart is empty.</span>
-              <span>Add products to your cart and buy quick and easy:</span>
+              <span> Add products to your cart and buy quick and easy:</span>
             </div>
             <StyledOrangeLink to="/books">Book Store</StyledOrangeLink>
           </StyledEmptyCartDiv>
@@ -76,7 +77,7 @@ export const ShoppingCart = () => {
 
         {cart.length > 0 && (
           <StyledSummary>
-            Total price: {total} zł
+            <StyledTotal>Total price: {total} zł</StyledTotal>
             <StyledDeliveryButton>
               <StyledLink to="/delivery"> Delivery and Payment</StyledLink>
             </StyledDeliveryButton>
