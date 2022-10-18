@@ -18,8 +18,7 @@ export const StyledTableHeader = styled.div`
       1fr
     );
   padding: 10px;
-  color: #ba120f;
-  background-color: #c0c2c2;
+  background-color: #f2f2f2;
   h3 {
     margin: 10px 0;
     font-weight: 500;
@@ -38,10 +37,10 @@ export const StyledTableRecord = styled.div`
     );
   padding: 5px 10px;
   &:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: white;
   }
   &:nth-child(odd) {
-    background-color: #c0c2c2;
+    background-color: #f2f2f2;
   }
   &:last-child {
     border-bottom-left-radius: 10px;

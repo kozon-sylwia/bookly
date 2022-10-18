@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 export const StyledH2 = styled.h2`
   color: black;
-  font-size: 35px;
-  font-weight: 400;
+  font-size: 45px;
+  font-weight: 300;
   text-align: center;
   margin-top: 0;
 `;
@@ -68,11 +68,15 @@ export const StyledLabel = styled.label`
   font-weight: bold;
 `;
 
-export const StyledAccountPage = styled.div`
+export const StyledAccountCard = styled.div`
   margin: 30px auto;
   padding: 30px;
-  max-width: 500px;
+  padding-top: 10px;
+  max-width: 400px;
   background-color: #f2f2f2;
   box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
+`;
+export const StyledAccountPage = styled.div`
+  margin-top: 50px;
 `;
