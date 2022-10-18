@@ -10,7 +10,7 @@ export const UserOrdersPage = () => {
       <OrderListProvider>
         <SearchOrderMenu />
         <DecorationBar />
-        <OrdersTable headers={["No", "Date", "Cost", "Status"]} />
+        <OrdersTable headers={["No", "Date", "User email", "Cost", "Status"]} />
       </OrderListProvider>
     </StyledUserOrdersPage>
   );
