@@ -71,6 +71,9 @@ export const StyledButton = styled.button`
   width: 130px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  :hover {
+    scale: 1.1;
+  }
 `;
 export const StyledBookCover = styled.img`
   width: 50px;
