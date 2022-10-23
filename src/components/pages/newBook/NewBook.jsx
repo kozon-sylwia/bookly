@@ -25,9 +25,7 @@ export const NewBook = (e) => {
     const storageRef = ref(storage, `covers-img/${file.name}`);
     uploadBytes(storageRef, file).then((snapshot) => {
       e.target[0].value = "";
-      getDownloadURL(snapshot.ref).then((downloadURL) => {
-        console.log(downloadURL);
-      });
+      getDownloadURL(snapshot.ref).then((downloadURL) => {});
     });
     alert("Image has been uploaded!");
   };

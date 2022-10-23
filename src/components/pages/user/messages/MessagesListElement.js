@@ -7,7 +7,6 @@ import { EmptyMessageContainer } from "./EmptyMessageContainer";
 export const MessagesListElement = () => {
   const { messagesList } = useContext(MessagesListContext);
 
-  console.log(messagesList);
   return (
     <StyledMessagesListElement>
       {messagesList.length !== 0 &&

@@ -38,14 +38,14 @@ const updateOrderStatus = (orderStatusSelectValue, order, changeStatus) => {
   updateDoc(docRef, updateStatus);
 };
 
-const sendMessageToUser = (userID, orderDate, orderStatus) => {
+export const sendMessageToUser = (userID, orderDate, orderStatus) => {
   const userDocRef = doc(db, "users", userID);
   const messageCollectionRef = collection(db, "messages");
   const message = {
     isRead: false,
-    content: `Your order form ${dateToString(
+    content: `Your order from ${dateToString(
       orderDate
-    )} change status on ${orderStatus}`,
+    )} changed status on ${orderStatus}`,
     date: Timestamp.now(),
     userID: userID,
   };
