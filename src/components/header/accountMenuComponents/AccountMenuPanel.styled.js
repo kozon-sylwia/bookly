@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const StyledAccountManagmentPanel = styled.div`
@@ -18,6 +19,11 @@ export const StyledAccountMenuPanel = styled.div`
   font-size: 20px;
   background-color: #f2f2f2;
   right: 0;
-  border: 1px solid black;
-  margin-right: 50px;
+  margin-right: 10px;
+`;
+
+export const StyledNavigationLink = styled(Link)`
+  :hover {
+    color: #ba120f;
+  }
 `;

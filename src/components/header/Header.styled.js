@@ -44,6 +44,9 @@ export const StyledNavLink = styled(NavLink)`
   &.active {
     color: #ba120f;
   }
+  :hover {
+    scale: 1.1;
+  }
   @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
