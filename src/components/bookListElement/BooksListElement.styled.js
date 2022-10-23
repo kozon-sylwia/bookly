@@ -1,20 +1,31 @@
 import styled from "styled-components";
+import { InfoPanel } from "./bookCardPartComponents/InfoPanel";
 
 export const StyledBooksListElement = styled.section`
-    display: flex;
-    padding: 20px;
-    gap: 40px;
-    flex-wrap: wrap;
-    justify-content:flex-start;
-`
+  display: flex;
+  padding: 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+`;
 
 export const StyledArticle = styled.article`
-    width: 200px;
-    border: 1px solid rgba(34, 9, 1, 0.7);
-    color: #FF902B;
-    font-size: 16px;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-end;
-    opacity: ${props => props.isDisable ? 0.7 : 1};
-`
+  width: 250px;
+  height: 400px;
+
+  color: black;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  border: none;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);
+  :hover {
+    div,
+    form {
+      display: ${(props) => (!props.isDisable ? "flex" : null)};
+    }
+  }
+  border-radius: 5px;
+`;

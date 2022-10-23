@@ -1,10 +1,5 @@
-import { StyledDecorationBar } from "./DecorationBar.styled"
-import book from "../../img/icons/book.png"
+import { StyledDecorationBar } from "./DecorationBar.styled";
 
 export const DecorationBar = () => {
-    return (
-        <StyledDecorationBar aria-hidden>
-            <img src={book} alt='decoration bar with book' />
-        </StyledDecorationBar>
-    )
-}
+  return <StyledDecorationBar aria-hidden></StyledDecorationBar>;
+};

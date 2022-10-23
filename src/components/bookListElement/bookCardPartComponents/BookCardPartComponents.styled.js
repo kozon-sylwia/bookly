@@ -1,64 +1,85 @@
 import styled from "styled-components";
 
 export const StyledCover = styled.div`
-    flex-grow: 1;
-    display: flex;  
-    img{
-        width: 200px;
-    }
-`
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  img {
+    width: 250px;
+    height: 400px;
+  }
+`;
 
 export const StyledCartPanel = styled.form`
-    padding: 20px 0;
-    display: block;
-    display: flex;
-    justify-content: space-around;
-    align-self: stretch;
-    background-color: #FF902B;
-`
+  padding: 20px 0;
+  display: block;
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  align-self: stretch;
+  background-color: #f2f2f2;
+  display: none;
+`;
 
 export const StyledCountInput = styled.input`
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid black;
-    width: 40px;
-    text-align: center;
-    cursor: pointer;
-`
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  font-weight: 300px;
+  width: 40px;
+  text-align: center;
+  cursor: pointer;
+`;
 
 export const StyledInfoPanel = styled.div`
-    background-color: rgba(34, 9, 1, 0.7);
-    height: 150px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    h3, p{
-        margin: 0;
-    }
-    .price {
-        font-size: 1.17em;
-        font-weight: bold;
-    }
-`
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  background-color: #f2f2f2;
+  align-items: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+  padding: 10px;
+  h3,
+  p {
+    margin: 0;
+  }
+  .price {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+  border-bottom: 1px solid black;
+  display: none;
+`;
 
 export const StyledButton = styled.button`
-    height: 20px;
-    width: 20px;
-    margin: 5px;
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    :hover{
-        scale: 1.2;
-    }
-    img{
-        height: 20px;
-    }    
-`
+  height: 20px;
+  width: 20px;
+  margin: 5px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  :hover {
+    scale: 1.2;
+  }
+  font-size: 30px;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+`;
 
 export const Wrapper = styled.div`
-    display: flex;
-`
+  display: flex;
+`;
+export const StyledBookTitle = styled.h3`
+  font-size: 18px;
+  font-weight: 500;
+`;

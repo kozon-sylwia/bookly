@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import background from "./img/background.jpg";
-import packageBackground from "./img/package-backgroung.jpg";
 import { Link } from "react-router-dom";
 <style>
   @import
@@ -8,81 +6,96 @@ import { Link } from "react-router-dom";
 </style>;
 
 export const StyledCart = styled.div`
-  font-family: "Inter", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background-image: url(${background});
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   margin-top: 0;
   padding-top: 0;
   padding-bottom: 50px;
+  position: relative;
+  height: auto;
+  height: 100%;
+  margin-bottom: 250px;
 `;
 export const StyledTitle = styled.h2`
-  font-family: "Inter", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  color: rgba(255, 242, 224, 0.9);
+  font-weight: 300;
+  font-size: 45px;
+  color: black;
   text-align: center;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-top: 0;
   padding-top: 50px;
 `;
 export const StyledCartItem = styled.li`
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 1fr 1fr 1fr;
   list-style-type: none;
-  border: 1px solid black;
-  display: flex;
-  flex-flow: row;
+  border-radius: 5px;
   align-items: center;
-  padding: 15px;
-  justify-content: space-around;
-  background-color: rgba(255, 242, 224, 0.9);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 15px;
+  padding: 20px;
+  background-color: #f2f2f2;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
   margin: auto;
   width: 100%;
   padding-left: 0;
   padding-right: 0;
 `;
 export const StyledButton = styled.button`
-  background-color: #ffce87;
-  border: 1px solid #220901;
-  font-family: "Inter", sans-serif;
+  background-color: #ba120f;
+  border: none;
+  border-radius: 25px;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  color: white;
   margin: 3px;
   height: 30px;
   width: 100px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  grid-column: 6/7;
 `;
 export const StyledDeliveryButton = styled.button`
-  background-color: #ffce87;
-  border: 1px solid #220901;
-  font-family: "Inter", sans-serif;
+  background-color: #ba120f;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   margin: 3px;
   height: 30px;
   width: 170px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+  grid-column: 2/3;
 `;
 export const StyledCounterButton = styled.button`
-  background: #ffce87;
-  border: 1px solid #220901;
-  /* border-radius: 50%; */
-  font-family: "Inter", sans-serif;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background: #f2f2f2;
+  color: black;
+  border: none;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
   width: 25px;
   height: 25px;
   cursor: pointer;
+  margin-bottom: 16px;
 `;
 export const StyledInput = styled.input`
-  background: rgba(255, 242, 224, 0.9);
-  border: 1px solid #220901;
+  background: white;
+  border: none;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   margin: 3px;
   cursor: pointer;
+  padding: 5px;
 `;
 
 export const StyledCounterIput = styled.input`
@@ -90,7 +103,7 @@ export const StyledCounterIput = styled.input`
   border: none;
   width: 40px;
   text-align: center;
-  font-weight: bold;
+  font-size: 20px;
   cursor: pointer;
 `;
 
@@ -100,17 +113,27 @@ export const StyledCartContainer = styled.div`
   width: 90vw;
   margin: auto;
 `;
-export const StyledSummary = styled.p`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+export const StyledSummary = styled.div`
+  display: grid;
+  grid-template-columns: 14fr 2fr;
+  font-weight: 200px;
   align-items: center;
-  border: 1px solid black;
+  border: none;
+  border-radius: 5px;
   margin-right: 100px;
   padding: 15px;
-  background-color: rgba(255, 242, 224, 0.9);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #f2f2f2;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.25);
   margin: auto;
+`;
+
+export const StyledTotal = styled.p`
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  margin-left: 50px;
+  font-size: 20px;
+  grid-column: 1/2;
 `;
 
 export const StyledCartList = styled.ul`
@@ -119,16 +142,19 @@ export const StyledCartList = styled.ul`
   justify-content: space-between;
   width: 100%;
   padding: 0;
-  row-gap: 15px;
+  row-gap: 25px;
+  margin-bottom: 25px;
 `;
 
 export const StyledEmptyCartDiv = styled.div`
+  font-weight: 400;
   display: flex;
   flex-direction: column;
   row-gap: 15px;
-  background-color: rgba(255, 242, 224, 0.7);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid #220901;
+  background-color: #f2f2f2;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 15px;
   width: 30%;
   margin-left: 40px;
   padding: 40px;
@@ -136,15 +162,21 @@ export const StyledEmptyCartDiv = styled.div`
   margin: auto;
   text-align: center;
   font-size: 25px;
+  align-items: center;
 `;
 
 export const StyledBookCover = styled.img`
   width: 50px;
+  grid-column: 1/2;
+  place-self: center;
 `;
-
+export const StyledBookInfo = styled.div`
+  grid-column: 2/3;
+`;
 export const Counter = styled.div`
   display: flex;
   flex-direction: row;
+  grid-column: 5/6;
 `;
 
 export const StyledBookTitle = styled.div`
@@ -157,16 +189,23 @@ export const StyledBookAuthor = styled.div`
 export const StyledPrices = styled.div`
   font-size: 19px;
   font-weight: normal;
+  grid-column: 3/4;
+`;
+
+export const StyledPricesSum = styled.div`
+  font-size: 19px;
+  font-weight: normal;
+  grid-column: 4/5;
 `;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: black;
+  color: white;
 `;
 export const StyledFormWrapper = styled.div`
-  font-family: "Inter", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background-image: url(${background});
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
@@ -182,23 +221,24 @@ export const StyledFormWrapper = styled.div`
 export const StyledDeliveryContainer = styled.div`
   display: flex;
   flex-direction: row;
-  background-color: rgba(255, 242, 224, 0.9);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid #220901;
+  background-color: #f2f2f2;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
   width: 80vw;
   margin: auto;
   padding: 40px;
   justify-content: space-between;
   align-items: center;
   column-gap: 20px;
+  font-weight: 500;
+  border-radius: 15px;
 `;
 
 export const StyledOrderTotal = styled.div`
   margin-left: 10%;
   padding: 10px;
-  background-color: rgba(255, 242, 224, 1);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: 1px solid #220901;
+  background-color: white;
+  box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
   height: 20%;
   width: 30%;
   text-align: center;
@@ -210,34 +250,22 @@ export const StyledOrderTotal = styled.div`
 export const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
-  row-gap: 5px;
+  row-gap: 10px;
   margin-right: 20%;
 `;
 
 export const StyledTotalCost = styled.h3`
-  background-color: #ffce87;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 50%;
   padding: 5px;
 `;
 
 export const StyledDeliveryHeader = styled.h2`
-  font-size: 30px;
+  font-size: 35px;
+  font-weight: 400;
 `;
 export const StyledDeliveryInfo = styled.p`
   font-size: 20px;
   font-weight: normal;
-`;
-export const StyledSubmitButton = styled.button`
-  background-color: #ffce87;
-  border: 1px solid #220901;
-  font-family: "Inter", sans-serif;
-  margin: 3px;
-  height: 30px;
-  width: 100px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  cursor: pointer;
-  margin-top: 30px;
 `;
 
 export const StyledOrderSummary = styled.div`
@@ -249,28 +277,35 @@ export const StyledOrderSummary = styled.div`
 `;
 
 export const StyledSummaryWrapper = styled.div`
-  font-family: "Inter", sans-serif;
+  @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap");
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  background-image: url(${packageBackground});
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  margin-top: 0;
+  margin-top: 50px;
   padding-top: 50px;
   padding-bottom: 20%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 100px;
 `;
 export const StyledSummaryHeader = styled.h1`
-  font-size: 40px;
+  font-size: 45px;
+  font-weight: 300;
 `;
 export const StyledSummaryInfo = styled.p`
   font-size: 20px;
-  /* font-weight: normal; */
+  font-weight: 400;
 `;
 
 export const StyledOrangeLink = styled(Link)`
   font-size: 20px;
-  color: #ff902b;
+  color: #ba120f;
+  font-weight: 600;
+  width: 200px;
+  cursor: pointer;
+  :hover {
+    scale: 1.1;
+  }
+  text-shadow: 1px 4px 4px rgba(0, 0, 0, 0.2);
 `;

@@ -12,7 +12,7 @@ export const ForgotPassword = () => {
       <StyledAuthPanel>
         <StyledAuthHeader>Remind password:</StyledAuthHeader>
         <AuthForm
-          submitText="Remind password"
+          submitText="REMIND PASSWORD"
           onSubmit={(e) => handlePasswordReset(e)}
           isPasswordHidden
         />

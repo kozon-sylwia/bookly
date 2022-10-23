@@ -1,11 +1,12 @@
 import { db } from "../api/firebase";
 import { addDoc, collection, Timestamp } from "firebase/firestore";
+import { sendMessageToUser } from "../components/ordersTable/utils/statusChangeHandlers";
 
 export const createOrder = (cart, orderData, total, user) => {
   const collectionRef = collection(db, "orders");
 
   const data = {
-    orderDate: Timestamp.now(),
+    orderDate: new Date(),
     orderValue: Number(total),
     positions: cart,
     status: "waiting",
@@ -22,4 +23,6 @@ export const createOrder = (cart, orderData, total, user) => {
     },
   };
   addDoc(collectionRef, data);
+
+  sendMessageToUser(user.id, data.orderDate, data.status);
 };

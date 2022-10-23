@@ -4,10 +4,15 @@ import { StyledHeader } from "./Header.styled";
 import { AuthPanel } from "./AuthPanel";
 import { AccountMenu } from "./AccountMenu";
 import { Navigation } from "./Navigation";
-import ghostbusters from "../../img/ghostbusters.png";
-import shoppingCart from "../../img/icons/shopping-cart.png";
-import { StyledNavLink } from "./Header.styled";
+import logo from "../../img/logo.jpg";
+import shoppingCart from "../../img/icons/shopping-cart.jpg";
+import {
+  StyledNavLink,
+  StyledCartLink,
+  StyledCartCounter,
+} from "./Header.styled";
 import { CartContext } from "../../providers/CartProvider";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   const { isAuth, user } = useContext(AuthContext);
@@ -15,23 +20,25 @@ export const Header = () => {
 
   return (
     <StyledHeader>
-      <div className="logoContainer">
-        <img src={ghostbusters} alt={"logo"} />
-        <p>Codebusters</p>
-      </div>
+      <Link to="/" className="logoContainer">
+        <img src={logo} alt={"logo"} />
+      </Link>
       <Navigation />
       {isAuth ? <AccountMenu /> : <AuthPanel />}
       {isAuth && (
-        <StyledNavLink to="/cart">
+        <StyledCartLink to="/cart">
           <span>
             <img
               src={shoppingCart}
               alt="shopping cart"
               className="shoppingCartIcon"
+              height={"20px"}
             />
           </span>
-          <span>{cart === undefined ? 0 : cart.length}</span>
-        </StyledNavLink>
+          <StyledCartCounter>
+            {cart === undefined ? 0 : cart.length}
+          </StyledCartCounter>
+        </StyledCartLink>
       )}
     </StyledHeader>
   );
