@@ -1,7 +1,7 @@
 {
-  "name": "bookstore",
+  "name": "bookly",
   "version": "0.1.0",
-  "homepage": "bookstore",
+  "homepage": "https://kozon-sylwia.github.io/bookly/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.7.0",
