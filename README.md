@@ -26,9 +26,9 @@ Using this app you can use the features like:
 
 ## Authors
 
-This app was created as a final project during Junior Front-end Developer Bootcamp at infoShare Academy by:
+This app was created as a final project during Junior Front-end Developer Bootcamp organized by infoShare Academy by:
 
-- @kozon-sylwia
-- @bkulpa
-- @Lyriaen
-- @jarko-mach
+- [@kozon-sylwia](https://github.com/kozon-sylwia "GitHub")
+- [@bkulpa](https://github.com/bkulpa "GitHub")
+- [@Lyriaen](https://github.com/Lyriaen "GitHub")
+- [@jarko-mach](https://github.com/jarko-mach "GitHub")
